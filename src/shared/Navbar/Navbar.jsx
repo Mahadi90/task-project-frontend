@@ -5,8 +5,8 @@ import logo from '../../assets/images/logo.png'
 const Navbar = () => {
 
    const navItem = <>
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/blog'>Blog</Link></li>
+      <li><Link className='uppercase font-semibold' to='/'>Home</Link></li>
+      <li><Link className='uppercase font-semibold' to='/blog'>Blog</Link></li>
    </>
 
     return (
@@ -30,7 +30,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Login</a>
+    <Link to='/login' className="btn">Login</Link>
   </div>
 </div>
     );
